@@ -1,0 +1,76 @@
+.microblogContainer {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+}
+
+.microblogPost {
+    grid-column: 1;
+
+    border-radius: 14px;
+    margin: 0 10px 15px 10px;
+    background-color: rgb(247,247,247);
+    padding: 12px 10px 20px 10px;
+}
+
+.microblogPost p {
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.microblogPost p > img {
+    width: 100%;
+    border-radius: 14px;
+    margin-top: 10px;
+}
+
+.microblogPost p:nth-child(1) {
+    margin-top: 12px;
+}
+
+.microblogPostHeader {
+    padding: 10px 20px 0 20px;
+    display: flex;
+}
+
+.microblogPostHeaderName {
+    color: rgb(160, 160, 160);
+    flex: 1;
+}
+
+.microblogPostHeaderDate {
+    flex: 1;
+    text-align: right;
+}
+
+.microblogPostContent {
+    padding: 10px 20px 20px 20px;
+}
+
+.microblogPostEditedDate {
+    padding: 10px 20px 10px 20px;
+    font-size: 10pt;
+    font-style: italic;
+}
+
+.microBlogMoreButton {
+    text-align: center;
+    margin-top: 50px;
+    grid-column: 1;
+}
+
+.microBlogMoreButton a {
+    background-color: rgb(247,247,247);
+    padding: 15px 20px;
+    border-radius: 14px;
+    text-decoration: none;
+}
+
+.microblogPaginator {
+    grid-column: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .microblogContainer {
+        grid-template-columns: 12fr;
+    }
+}

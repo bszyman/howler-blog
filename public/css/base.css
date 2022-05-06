@@ -1,0 +1,115 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+a {
+    color: rgb(88,197,60);
+    text-decoration: none;
+    transition: text-decoration 100ms linear 0s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    line-height: 22pt;
+}
+
+li > p {
+    margin: 0 0 5px 0;
+    line-height: 16pt;
+}
+
+.contentContainer {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto 80px auto;
+}
+
+.contentContainerSmall {
+    margin: 30px auto 80px auto;
+    max-width: 800px;
+}
+
+.navigationSideBar {
+    flex: 1;
+}
+
+.contentSection {
+    flex: 4;
+    padding-left: 72px;
+}
+
+.paginationBar {
+    width: 100%;
+    text-align: center;
+}
+
+.paginationBarInGrid {
+    grid-column: 1;
+}
+
+.paginationButton {
+    text-align: center;
+    margin-top: 50px;
+    grid-column: 1;
+    display: inline-block;
+}
+
+.paginationButton a {
+    background-color: rgb(247,247,247);
+    padding: 15px 20px;
+    border-radius: 14px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .contentContainer {
+        flex-direction: column;
+    }
+
+    .navigationSideBar {
+        flex: 1;
+    }
+
+    .contentSection {
+        flex: 1;
+        padding:  0 10px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .contentContainer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contentSection {
+        flex: 4;
+        padding-left: 72px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contentContainer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

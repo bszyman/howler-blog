@@ -1,0 +1,138 @@
+.articleContainer {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+}
+
+.articleBackLink {
+    padding-bottom: 10px;
+}
+
+.articleTitleBar {
+    padding: 0 0 10px 0;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.articleTitleBar h1 {
+    margin: 0;
+}
+
+.articleTitleBar > div:nth-child(1) {
+    flex: 2;
+    flex-shrink: 1;
+    flex-basis: 0;
+    text-align: left;
+    align-content: center;
+}
+
+.articleTitleBar > div:nth-child(2) {
+    flex: 1;
+    text-align: right;
+    align-content: center;
+    color: black;
+}
+
+.articleContent {
+    grid-column: 1;
+}
+
+.articleContent blockquote {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 14px;
+    margin: 0 10px 10px 10px;
+    background-color: rgb(247, 247, 247);
+    padding: 0 20px;
+}
+
+.articleContent p {
+    line-height: 27pt;
+}
+
+.articleContent li > p {
+    margin: 0 0 5px 0;
+    line-height: 18pt;
+}
+
+.articleContent img {
+    border-radius: 14px;
+    max-width: 100%;
+}
+
+.articleContent pre {
+    border-radius: 14px;
+    margin: 0 10px 10px 10px;
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    overflow: hidden;
+    width: 80%;
+}
+
+.articleContent pre code {
+    width: 80%;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .articleContainer {
+        grid-template-columns: 12fr;
+    }
+
+    .articleBackLink {
+        padding: 0 0 10px 0;
+    }
+
+    .articleContent img {
+        width: 98%;
+        margin: 15px auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .articleContainer {
+        grid-template-columns: 12fr;
+    }
+
+    .articleTitleBar {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .articleTitleBar {
+        grid-column: 1;
+        padding: 0 0 10px 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-content: unset;
+        align-items: start;
+    }
+
+    .articleTitleBar > div:nth-child(1) {
+        flex: 1;
+        text-align: left;
+    }
+
+    .articleTitleBar > div:nth-child(2) {
+        flex: 1;
+        text-align: left;
+        color: black;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .articleContainer {
+        grid-template-columns: 10fr 2fr;
+    }
+
+    .articleTitleBar {
+        flex-direction: row;
+    }
+
+    .articleTitleBar > div:nth-child(2) {
+        text-align: right;
+        color: black;
+    }
+}

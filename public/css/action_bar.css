@@ -1,0 +1,48 @@
+.action-bar {
+	padding: 6px 0;
+	text-align: right;
+	font-size: 8pt;
+	display: table;
+}
+
+.action-bar a {
+	font-size: 8pt;
+}
+
+.action-bar label {
+	font-weight: bold;
+	font-size: 9pt;
+}
+
+.action-bar .active-tab-text {
+	color: #7b7b7b;
+}
+
+.action-bar-right {
+	display: table-cell;
+	width: 50%;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.action-bar-right > * {
+	margin-right: 8px;
+}
+
+.action-bar-left {
+	display: table-cell;
+	width: 50%;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.action-bar-left > * {
+	margin-left: 8px;
+}
+
+.action-bar #search-text {
+	padding: 4px;
+	background-color:rgb(255,255,255); 
+	border:1px solid rgba(210, 210, 210, 1);
+	border-radius: 3px;
+}

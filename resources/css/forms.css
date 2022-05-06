@@ -1,0 +1,54 @@
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.formSection input[type=text],
+.formSection input[type=date],
+.formSection input[type=email],
+.formSection input[type=url],
+.formSection input[type=password],
+.formSection textarea {
+    padding: 8px;
+    width:90%;
+    background-color:rgb(255,255,255);
+    border:1px solid rgba(210, 210, 210, 1);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.formSection input[type=file] {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.formSection {
+    border-radius: 14px;
+    margin: 0 10px 15px 10px;
+    background-color: rgb(247,247,247);
+    padding: 12px 10px 20px 10px;
+}
+
+.formSectionFieldText {
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+
+.formFieldStandardBottomMargin {
+    margin-bottom: 7px;
+}
+
+.formField10pxBottomMargin {
+    margin-bottom: 10px;
+}
+
+.checkItem {
+    margin-bottom: 10px;
+}

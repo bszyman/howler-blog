@@ -1,0 +1,92 @@
+.navigationTitleGroup {
+    text-align: left;
+    margin-bottom: 72px;
+}
+
+.navigationTitleGroup img {
+    border-radius: 14px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.navigationTitleGroupSiteTitle {
+    font-weight: bold;
+    font-size: 18pt;
+    margin: 12px 0 0 0;
+}
+
+.navigationTitleGroupDescription {
+    margin: 0 0 4px 0;
+}
+
+.navigationBioLocation {
+    font-size: 10pt;
+    color: gray;
+}
+
+.navigationGroup {
+    margin-bottom: 72px;
+}
+
+.navigationGroupTitle {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.navigationGroup ul {
+    margin: 0 0 0 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.navigationGroup li {
+    background-color: rgb(247,247,247);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-bottom: none;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 14px;
+}
+
+.navigationGroup a {
+    color: #92989F;
+}
+
+.navigationGroupActiveLink {
+    color: rgb(88,197,60) !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .navigationTitleGroup {
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+    .navigationGroupTitle {
+        margin: 0 0 0 10px;
+    }
+
+    .navigationGroup {
+        margin-bottom: 36px;
+    }
+
+    .navigationGroup li {
+        border-radius: 14px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .navigationGroup ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .navigationGroup li {
+        padding: 5px 0;
+        margin: 0;
+        width: 85%;
+        background-color: white;
+    }
+}
