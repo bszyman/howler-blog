@@ -22,7 +22,7 @@
         ready for visitors.
     </p>
 
-    <form action="/initialize/" method="post">
+    <form action="/initialize/save" method="post">
         @csrf
         <input type="hidden" name="action" value="initialize">
 

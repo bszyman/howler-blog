@@ -21,7 +21,7 @@ Route::get('/feeds/rss', \App\Http\Controllers\RssFeed::class);
 
 Route::controller(\App\Http\Controllers\Initialization::class)->group(function () {
     Route::get("/initialize/", "presentInitForm");
-    Route::post("/initialize/", "saveInitForm");
+    Route::post("/initialize/save", "saveInitForm");
 });
 
 Route::controller(\App\Http\Controllers\Posts::class)->group(function () {
