@@ -8,7 +8,7 @@ class SiteStore
 {
     public static function checkIfInitialized(): bool
     {
-        return Site::all()->count();
+        return (Site::all()->count() > 0);
     }
 
     public static function fetchActiveConfig(): Site
