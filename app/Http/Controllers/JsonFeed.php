@@ -11,8 +11,8 @@ class JsonFeed extends Controller
     public function __invoke()
     {
         $site_config = SiteStore::fetchActiveConfig();
-        $posts = PostStore::mostRecent();
+        $posts = PostStore::paginateForFeed();
 
-        return json_encode($posts);
+        return json_encode($posts->items());
     }
 }

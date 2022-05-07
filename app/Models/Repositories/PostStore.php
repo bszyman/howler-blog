@@ -37,6 +37,6 @@ class PostStore
 
     public static function paginateForFeed()
     {
-        return Post::where("published", 1)->orderBy("created_at", "desc")->paginate(20);
+        return Post::where("published", 1)->orderBy("created_at", "desc")->paginate(12);
     }
 }
