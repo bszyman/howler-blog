@@ -48,7 +48,7 @@ class Post extends Model implements PostInterface
 
     public function wasEdited()
     {
-        return $this->created_at !== $this->updated_at;
+        return $this->created_at->format("U") !== $this->updated_at->format("U");
     }
 
     public function getPostDate()
