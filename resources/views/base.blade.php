@@ -30,11 +30,11 @@
     @endif
 
     @if($site_config->getAllowRssSetting())
-    <link href="{{ $site_config->getSiteUrl() }}/rss/" rel="alternate" type="application/rss+xml" title="RSS Feed" />
+    <link href="{{ $site_config->getSiteUrl() }}/feeds/rss/" rel="alternate" type="application/rss+xml" title="RSS Feed" />
     @endif
 
     @if($site_config->getAllowAtomSetting())
-    <link href="{{ $site_config->getSiteUrl() }}/atom/" type="application/atom+xml" rel="alternate" title="Atom Feed" />
+    <link href="{{ $site_config->getSiteUrl() }}/feeds/atom/" type="application/atom+xml" rel="alternate" title="Atom Feed" />
     @endif
 </head>
 <body>
