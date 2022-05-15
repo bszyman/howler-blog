@@ -20,14 +20,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
+    @section("opengraph")
     <meta property="og:title" content="{{ $site_config->getBioName() }}'s Microblog">
     <meta property="og:site_name" content="{{ $site_config->getSiteName() }}">
     <meta property="og:url" content="{{ $site_config->getSiteUrl() }}">
     <meta property="og:description" content="See {{ $site_config->getBioName() }}'s thoughts and travels across the internet.">
     <meta property="og:type" content="website">
     @if ($site_config->getProfilePicUrl())
-    <meta property="og:image" content="{{ $site_config->getProfilePicUrl() }}">
+    <meta property="og:image" content="{{ $site_config->getSiteUrl() }}/{{ $site_config->getProfilePicUrl() }}">
     @endif
+    @show
 
     @if($site_config->getAllowRssSetting())
     <link href="{{ $site_config->getSiteUrl() }}/feeds/rss/" rel="alternate" type="application/rss+xml" title="RSS Feed" />

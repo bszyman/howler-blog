@@ -1,5 +1,16 @@
 @extends("base")
 
+@section("opengraph")
+<meta property="og:title" content="{{ $site_config->getBioName() }}'s Microblog">
+<meta property="og:site_name" content="{{ $site_config->getSiteName() }}">
+<meta property="og:url" content="{{ $site_config->getSiteUrl() }}/posts/{{ $post->getID() }}">
+<meta property="og:description" content="{{ $post->getPostText() }} - {{ $site_config->getBioName() }}">
+<meta property="og:type" content="website">
+@if ($site_config->getProfilePicUrl())
+<meta property="og:image" content="{{ $site_config->getSiteUrl() }}/{{ $site_config->getProfilePicUrl() }}">
+@endif
+@endsection
+
 @section("content")
 <div class="microblogContainer">
     @guest
