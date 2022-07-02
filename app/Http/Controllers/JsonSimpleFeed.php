@@ -11,6 +11,6 @@ class JsonSimpleFeed extends Controller
     {
         $posts = PostStore::allPosts();
 
-        return json_encode($posts->items());
+        return json_encode($posts);
     }
 }
