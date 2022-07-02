@@ -30,6 +30,15 @@ class PostStore
         }
     }
 
+    public static function allPosts(bool $include_private = false)
+    {
+        if ($include_private) {
+            return Post::orderBy("created_at", "desc");
+        } else {
+            return Post::where("published", 1)->orderBy("created_at", "desc");
+        }
+    }
+
     public static function mostRecent()
     {
         return Post::latest()->take(100)->get();
