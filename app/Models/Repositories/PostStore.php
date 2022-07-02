@@ -33,9 +33,9 @@ class PostStore
     public static function allPosts(bool $include_private = false)
     {
         if ($include_private) {
-            return Post::orderBy("created_at", "desc");
+            return Post::orderBy("created_at", "desc")->get();
         } else {
-            return Post::where("published", 1)->orderBy("created_at", "desc");
+            return Post::where("published", 1)->orderBy("created_at", "desc")->get();
         }
     }
 

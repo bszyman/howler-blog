@@ -9,7 +9,7 @@ class JsonSimpleFeed extends Controller
 {
     public function __invoke()
     {
-        $posts = PostStore::allPosts(include_private: true);
+        $posts = PostStore::allPosts();
 
         return json_encode($posts);
     }
